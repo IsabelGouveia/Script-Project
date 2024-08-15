@@ -1,4 +1,4 @@
-def get_properties(email_template)
+def collect_properties(email_template)
     
     user_regex = /\{\{\s*user\.(\w+)\s*\}\}/
     event_regex = /\{\{\s*event\.(\w+)\s*\}\}/
@@ -74,5 +74,5 @@ def get_properties(email_template)
   EMAIL
   
   
-  puts get_properties(email_template).inspect
+  puts collect_properties(email_template).inspect
   
